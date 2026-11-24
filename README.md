@@ -67,7 +67,7 @@ The project is divided into three main stages:
 
 ### Correlation with exam score
 
-![Correlation with Exam Score](images/Correlation_with_Exam_Score.png)
+![Correlation with Exam Score](output/Correlation_with_Exam_Score.png)
 
 - **Attendance** showed the strongest positive correlation with exam scores (0.58).
 - **Hours studied** followed with a positive correlation of 0.45.
@@ -76,7 +76,7 @@ The project is divided into three main stages:
 
 ### Exam score by family income
 
-![Average Exam Score by Family Income](images/Average_Exam_Score_by_Family_Income.png)
+![Average Exam Score by Family Income](output/Average_Exam_Score_by_Family_Income.png)
 
 *Note: the y-axis is zoomed in (it starts near 65, not 0). Students from high-income families scored about 1 point higher on average than those from low-income families (67.84 vs 66.85).*
 
@@ -84,7 +84,7 @@ Students with higher motivation levels and students in private schools also had 
 
 ### Distribution of exam scores
 
-![Distribution of Exam Scores](images/Distribution_of_Exam_Scores.png)
+![Distribution of Exam Scores](output/Distribution_of_Exam_Scores.png)
 
 Exam scores followed an approximately normal distribution with a mean of about 67.2, with a few high outliers near 100.
 
