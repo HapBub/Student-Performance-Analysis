@@ -153,9 +153,9 @@ cd Student-Performance-Analysis
 python main.py
 ```
 
-## 📄 Project Report & Presentation
+## 📄 Documentation
 
-- [Full Project Report (PDF)](Report.pdf): methodology, analysis, findings, and project development
+- [Full Project Report (PDF)](https://drive.google.com/file/d/1KvN2MNpYXCbEzb5bdskbS2rPAU5PUClS/view?usp=sharing): methodology, analysis, findings, and project development
 - [Presentation](https://canva.link/auldbx7sxnfh12q): slides summarizing the project
 
 ## 👥 Contributors
