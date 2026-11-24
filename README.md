@@ -12,7 +12,7 @@ The project was developed as a team of two for the **DS120 – Programming for D
 
 ## 📊 Dataset
 
-The analysis uses the *Student Performance Factors* dataset from [Kaggle] (https://www.kaggle.com/datasets/fatihyavuzz/studentperformancefactors).
+The analysis uses the [*Student Performance Factors*] (https://www.kaggle.com/datasets/fatihyavuzz/studentperformancefactors) dataset from Kaggle.
 
 - **Number of observations:** 6,607 students
 - **Number of features:** 20
