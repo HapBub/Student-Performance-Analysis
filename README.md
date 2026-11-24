@@ -155,9 +155,10 @@ cd Student-Performance-Analysis
 python main.py
 ```
 
-## 📄 Project Report
+## 📄 Project Report & Presentation
 
-For a more detailed explanation of the methodology, analysis, findings, and project development, see the [Full Project Report (PDF)](Report.pdf).
+- [Full Project Report (PDF)](Report.pdf): methodology, analysis, findings, and project development
+- [Presentation](https://canva.link/auldbx7sxnfh12q): slides summarizing the project
 
 ## 👥 Contributors
 
