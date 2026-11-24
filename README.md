@@ -8,11 +8,11 @@ The objective of this project is to identify and examine the factors that have t
 
 Using Python and several data science libraries, we explored how factors such as attendance, study habits, motivation, family income, and school type relate to academic outcomes.
 
-The project was developed as part of the **DS120 – Programming for Data Science** course at the American University of Armenia.
+The project was developed as a team of two for the **DS120 – Programming for Data Science** course at the American University of Armenia.
 
 ## 📊 Dataset
 
-The analysis uses the *Student Performance Factors* dataset obtained from Kaggle.
+The analysis uses the *Student Performance Factors* dataset from Kaggle.
 
 - **Number of observations:** 6,607 students
 - **Number of features:** 20
@@ -27,6 +27,8 @@ The dataset includes variables such as:
 - School type and tutoring sessions
 
 Gender, distance from home, and learning disabilities were treated as additional variables and analyzed separately.
+
+> The CSV file is not included in this repository. Download *Student Performance Factors* from Kaggle and place `StudentPerformanceFactors.csv` in the project folder (see [Getting Started](#-getting-started)).
 
 ## 🛠️ Technologies & Libraries
 
@@ -46,12 +48,12 @@ The project is divided into three main stages:
 - Selecting relevant columns
 - Removing duplicate observations
 - Correcting data types
-- Handling missing values
+- Handling missing values (median for numerical columns, mode for categorical columns)
 
 ### 2. Statistical Analysis
 
 - Correlation analysis to examine relationships between numerical variables
-- Group aggregation to compare academic performance across categorical variables
+- Group aggregation (mean, median, standard deviation) to compare exam scores across categorical variables
 - Statistical summaries of numerical features
 
 ### 3. Data Visualization
@@ -63,17 +65,38 @@ The project is divided into three main stages:
 
 ## 💡 Key Findings
 
-The analysis revealed several notable patterns:
+### Correlation with exam score
+
+![Correlation with Exam Score](images/Correlation_with_Exam_Score.png)
 
 - **Attendance** showed the strongest positive correlation with exam scores (0.58).
 - **Hours studied** followed with a positive correlation of 0.45.
-- Previous scores and tutoring sessions also demonstrated weaker positive correlations.
-- Students with higher motivation levels tended to achieve better academic results.
-- Students from higher-income families showed higher average scores than those from lower-income families.
-- Private school students demonstrated higher average scores than public school students.
-- Exam scores followed an approximately normal distribution, with a mean of around 67.
+- **Previous scores** (0.18) and **tutoring sessions** (0.16) showed weaker positive correlations.
+- **Sleep hours** (-0.02) and **physical activity** (0.03) showed no meaningful relationship with exam scores.
 
-These findings describe associations within the dataset and do not necessarily establish causal relationships.
+### Exam score by family income
+
+![Average Exam Score by Family Income](images/Average_Exam_Score_by_Family_Income.png)
+
+*Note: the y-axis is zoomed in (it starts near 65, not 0). Students from high-income families scored about 1 point higher on average than those from low-income families (67.84 vs 66.85).*
+
+Students with higher motivation levels and students in private schools also had higher average scores, with similarly small differences.
+
+### Distribution of exam scores
+
+![Distribution of Exam Scores](images/Distribution_of_Exam_Scores.png)
+
+Exam scores followed an approximately normal distribution with a mean of about 67.2, with a few high outliers near 100.
+
+### Additional variables
+
+Gender made no difference to average exam scores (67.24 vs 67.23). Learning disabilities and distance from home were associated with slightly lower averages (about 1 point).
+
+## ⚠️ Limitations
+
+- These findings describe associations within the dataset and do not establish causal relationships. For example, attendance and scores move together, but this analysis cannot say which drives the other.
+- Group differences (income, motivation, school type) are small, about 1 point on average, and the group charts use a zoomed-in y-axis.
+- The analysis is descriptive. No predictive models were trained.
 
 ## 📁 Project Structure
 
@@ -85,7 +108,8 @@ Student-Performance-Analysis/
 ├── visualizer.py    # Data visualization
 ├── main.py          # Main execution pipeline
 │
-├── StudentPerformanceFactors.csv
+├── images/          # Charts used in this README
+├── requirements.txt
 ├── Report.pdf
 └── README.md
 ```
@@ -103,12 +127,10 @@ The project follows a modular, object-oriented structure:
 
 ### Prerequisites
 
-Make sure you have Python installed.
-
-Install the required libraries:
+Make sure you have Python 3 installed, then install the required libraries:
 
 ```bash
-pip install numpy pandas matplotlib
+pip install -r requirements.txt
 ```
 
 ### Running the Project
@@ -125,7 +147,7 @@ git clone https://github.com/HapBub/Student-Performance-Analysis
 cd Student-Performance-Analysis
 ```
 
-3. Make sure the dataset file is in the project directory.
+3. Download the dataset from Kaggle and place `StudentPerformanceFactors.csv` in the project directory.
 
 4. Run the main script:
 
@@ -135,7 +157,7 @@ python main.py
 
 ## 📄 Project Report
 
-For a more detailed explanation of the methodology, analysis, findings, and project development, see the Full Project Report (PDF).
+For a more detailed explanation of the methodology, analysis, findings, and project development, see the [Full Project Report (PDF)](Report.pdf).
 
 ## 👥 Contributors
 
@@ -149,7 +171,10 @@ For a more detailed explanation of the methodology, analysis, findings, and proj
 
 Both contributors collaborated on the statistical analysis and overall project architecture.
 
+## 📜 License
+
+Released under the MIT License. The dataset is the property of its original authors; see its Kaggle page for terms.
+
 ---
 
 *Developed as part of DS120 – Programming for Data Science, American University of Armenia (May 2026).*
-
