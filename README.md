@@ -28,8 +28,6 @@ The dataset includes variables such as:
 
 Gender, distance from home, and learning disabilities were treated as additional variables and analyzed separately.
 
-> The CSV file is not included in this repository. Download it from Kaggle and place `StudentPerformanceFactors.csv` in the project folder.
-
 ## 🛠️ Technologies & Libraries
 
 - **Python** – Main programming language
