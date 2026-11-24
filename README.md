@@ -12,7 +12,7 @@ The project was developed as a team of two for the **DS120 – Programming for D
 
 ## 📊 Dataset
 
-The analysis uses the *Student Performance Factors* dataset from Kaggle.
+The analysis uses the *Student Performance Factors* dataset from [Kaggle] (https://www.kaggle.com/datasets/fatihyavuzz/studentperformancefactors).
 
 - **Number of observations:** 6,607 students
 - **Number of features:** 20
@@ -28,7 +28,7 @@ The dataset includes variables such as:
 
 Gender, distance from home, and learning disabilities were treated as additional variables and analyzed separately.
 
-> The CSV file is not included in this repository. Download it from [Kaggle](https://www.kaggle.com/datasets/fatihyavuzz/studentperformancefactors) and place `StudentPerformanceFactors.csv` in the project folder.
+> The CSV file is not included in this repository. Download it from Kaggle and place `StudentPerformanceFactors.csv` in the project folder.
 
 ## 🛠️ Technologies & Libraries
 
